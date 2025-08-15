@@ -16,7 +16,8 @@ const PORT = process.env.PORT || 5001;
 // ✅ CORS configuration for production
 const corsOptions = {
     origin: [
-        'http://localhost:3000', // Local development
+        'http://localhost:3000', // Local development,
+        'https://vrindavan-nursery.vercel.app',
         'https://vrindavan-nursery-swaraj-jagtaps-projects.vercel.app', // Replace with your actual frontend URL
         'https://vrindavan-nursery-git-main-swaraj-jagtaps-projects.vercel.app', // If using Netlify
     ],
