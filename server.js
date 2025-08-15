@@ -17,8 +17,8 @@ const PORT = process.env.PORT || 5001;
 const corsOptions = {
     origin: [
         'http://localhost:3000', // Local development
-        'https://your-frontend-domain.vercel.app', // Replace with your actual frontend URL
-        'https://your-frontend-domain.netlify.app', // If using Netlify
+        'https://vrindavan-nursery-swaraj-jagtaps-projects.vercel.app/', // Replace with your actual frontend URL
+        'https://vrindavan-nursery-git-main-swaraj-jagtaps-projects.vercel.app/', // If using Netlify
     ],
     credentials: true,
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
@@ -53,14 +53,14 @@ app.get('*', (req, res) => {
 (connectMongo = async () => {
     try {
         const connectDB = await mongoose.connect(
-            process.env.MONGO_ATLAS || 
+            process.env.MONGO_ATLAS ||
             'mongodb+srv://Vrindavan_Nursery:vrindavan123@cluster0.ltxinl4.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0'
         )
 
         app.listen(PORT, '0.0.0.0', () => {
             console.log(`Server running on port ${PORT}`);
         });
-        
+
         if (connectDB) {
             console.log("Connected to the database")
         }
