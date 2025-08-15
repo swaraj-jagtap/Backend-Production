@@ -17,8 +17,8 @@ const PORT = process.env.PORT || 5001;
 const corsOptions = {
     origin: [
         'http://localhost:3000', // Local development
-        'https://vrindavan-nursery-swaraj-jagtaps-projects.vercel.app/', // Replace with your actual frontend URL
-        'https://vrindavan-nursery-git-main-swaraj-jagtaps-projects.vercel.app/', // If using Netlify
+        'https://vrindavan-nursery-swaraj-jagtaps-projects.vercel.app', // Replace with your actual frontend URL
+        'https://vrindavan-nursery-git-main-swaraj-jagtaps-projects.vercel.app', // If using Netlify
     ],
     credentials: true,
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
